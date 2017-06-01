@@ -19,6 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/email', 'TestController@email')->name('email');
+
 // Route::get('/test', 'TestController@show')->name('test');
 
 Route::get('/test', ['as' => 'test' , 'uses' => 'TestController@getAticles']);
